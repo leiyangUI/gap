@@ -1,0 +1,37 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "yel yel pur"
+    "r v pur"
+    "r o o";
+  gap: 10px;
+}
+
+div:nth-child(1) {
+  grid-area: yel;
+  background: yellow;
+}
+
+div:nth-child(2) {
+  grid-area: pur;
+  background: purple;
+}
+
+div:nth-child(3) {
+  grid-area: v;
+  background: green;
+}
+
+div:nth-child(4) {
+  grid-area: r;
+  background: red;
+}
+
+div:nth-child(5) {
+  grid-area: o;
+  background: orchid;
+}
